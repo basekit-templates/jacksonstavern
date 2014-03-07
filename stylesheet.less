@@ -166,7 +166,7 @@ body {
                         position: relative;
                         &:after {
                             content: "\25BC";
-                            font-size: 5px;
+                            font-size: 7px;
                             position: absolute;
                             top: 1px;
                             display: block;
@@ -824,7 +824,7 @@ body {
                 } /* end ol */  
 
                 .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
-                    border: 6px solid fade(@color-swatch7, 35%);
+                    border: 6px solid fade(@color-swatch7, 20%);
                     padding: 0 2em 2em;
                     margin: 2em 0 1em;
                     position: relative;
@@ -846,7 +846,7 @@ body {
                     float: left;
                     width: 100%;
                     text-align: center;
-                    margin: 0;
+                    margin: 1em 0;
                     p { /* menu-note */
                       float: left;
                       width: 100%;
@@ -898,13 +898,14 @@ body {
   SIGN UP FORM & PROFILE FORM
    =============================== */
 
-   .widget.signupform fieldset input, .widget.profile form fieldset input {
+   .widget.signupform fieldset input, .widget.profile form fieldset input, .widget.contactform input, .widget.contactform textarea {
         border: 1px solid darken(@color-swatch1,10%);
         background-color: #ffffff;
+        color: rgb(65,65,65)!important;
     }
     .signupform fieldset button, .widget.profile form button {
-        height: 45px;
-        padding: 6px 10px 5px;
+        height: 42px;
+        padding: 6px 18px 5px;
     }
 
 /* ===============================
@@ -1022,7 +1023,7 @@ body {
 .widget {
     &.bloglistposts {
         .blog-post-item {
-            border-bottom: 1px dotted @color-swatch5;
+            border-bottom: 1px dotted fade(@color-swatch5, 35%);
         }
     }
 }
@@ -1067,6 +1068,7 @@ width: 100%;
     form {
         input {
             border: 1px solid darken(@color-swatch1,10%);
+            color: rgb(65,65,65)!important;
             }
 
         button {
