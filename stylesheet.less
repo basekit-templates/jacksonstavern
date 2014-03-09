@@ -239,153 +239,6 @@ body {
 }
 
 /* ===============================
-   CLICK TO CALL
-   =============================== */
-
-.desktop-phone {
-    width: 20%;
-    float: left;
-    @media only screen and (max-width: 960px) {
-        display: none;
-    }
-}
-
-.mobile-phone {
-    display: none;
-    @media only screen and (max-width: 960px) {
-        display: block;
-        width: 50%;
-        margin: 0;
-        float: left;
-        padding-right: 1em;
-    }
-    @media @mobile {
-        width:100%;
-        padding-right: 0;
-    }
-    .widget.clicktocall {
-        float: right;
-        @media @mobile {
-            float: none;
-            border: 1px dotted @color-swatch1;
-            width: 100%;
-            padding: 0;
-        }
-    }
-}
-
-.desktop-phone, .mobile-phone {
-    .widget {
-        &.clicktocall {
-            text-align: center;
-            margin-top: 0.9em;
-            @media @mobile {
-                padding: 10px 0;
-                margin-top: 0;
-            }
-            a {
-                background-image:image('/images/ic-call-desktop.png');
-                background-position: 15px center;
-                background-repeat:no-repeat;
-                padding: 15px 20px 15px 38px;
-                background-color: @color-swatch2;
-                font-family: @font-swatch7-font-family;
-                font-size: @font-swatch7-font-size;
-                font-weight: @font-swatch7-font-weight;
-                line-height: @font-swatch7-line-height;
-                color: @color-swatch4;
-                letter-spacing: @font-swatch7-letter-spacing;
-                text-decoration: none;
-                margin: 5em 0 1.8em;
-                border: 1px dotted @color-swatch1;
-                @media @mobile {
-                    border: none;
-                    padding: 0 20px 0 38px;
-                }
-                &:hover {
-                    cursor: pointer;
-                    text-decoration: underline; 
-                    @media @mobile {
-                        background-image:image('/images/ic-call-desktop.png');
-                        background-position: 15px center;
-                        background-repeat:no-repeat;
-                        color: @color-swatch4;
-                        padding: 0 20px 0 38px;
-                        cursor: pointer;
-                        background-color: @color-swatch2;
-                    }
-                }
-            }
-        }
-    } /* end CLICK TO CALL */
-}
-
-
-/* ===============================
-    TWEET IN HEADER
-   =============================== */
-
-.desktop-tweet {
-    width: 20%;
-    float: right;
-    @media only screen and (max-width: 960px) {
-        display: none;
-    }
-}
-
-.mobile-tweet {
-    display: none;
-    @media only screen and (max-width: 960px) {
-        width: 50%;
-        display: block;
-        text-align:center;
-        float: right;
-        padding-left: 1em;
-    }
-    @media @mobile {
-        width: 100%;
-        padding-left: 0;
-    }
-    .widget.tweet {
-        margin: 0 auto;
-        float: left;
-        @media @mobile {
-            float: none;
-            margin-top: 2em;
-        }
-    }
-}
-
-.desktop-tweet, .mobile-tweet {
-    .widget.tweet {
-        width: 156px;
-        @media @mobile {
-            width: 100%;
-        }
-        padding: 0;            
-        a {
-            background-image:image('/images/tweet.png');
-            background-size: 18px;
-            background-position: 43px center;
-            @media @mobile {
-                background-position: 90px center;
-            }
-            padding: 12px 20px 12px 38px;
-            display: block;
-            background-color: @color-swatch2;
-            color: @color-swatch4;
-            margin: 0;
-            border: 1px dotted @color-swatch1;
-            &:hover {
-                text-decoration: underline; 
-            }
-        }
-    }
-}
-
-
-
-/* ===============================
    DIVIDER WIDGET
    =============================== */
 
@@ -399,8 +252,6 @@ body {
         border-top: 1px dotted @color-swatch1;
     }
 }
-
-
 
 /* ===============================
    HEADER
@@ -620,7 +471,6 @@ body {
 .widget {
     &.menu {
         margin-top: 0.3em;
-        float: left;
         width: 100%;
         .main {
             padding: 0;
@@ -630,7 +480,6 @@ body {
                 display: block;
                 width: 100%;
                 margin: 0 auto;
-                float: left;
                 @media only screen and (max-width: 960px) {
                     width: 100%;
                     margin: 0;

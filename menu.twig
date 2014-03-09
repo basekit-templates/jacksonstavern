@@ -2,7 +2,9 @@
 
 {% block content %}
 
-{{widget('extendednavigation', 'tabletnavigation', {})|raw}}
+{% if pages|length > 1 %}
+    {{widget('extendednavigation', 'tabletnavigation', {})|raw}}
+{% endif %}
 <div class="canvas">
 
 <header class="bk-header">
