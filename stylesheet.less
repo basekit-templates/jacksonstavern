@@ -543,6 +543,10 @@ body {
                             border-bottom: 1px dotted fade(@color-swatch6,20%);
                         }
                         &.menu-item-promoted { /* menu-item-promoted */
+                            border: 6px solid rgba(255, 255, 255, 0.2);
+                            padding: 0 2em 2em;
+                            margin: 2em 0 1em;
+                            position: relative;
                             display: block;
                             .inner-item {
                                 h3 {
@@ -936,6 +940,16 @@ width: 100%;
     }
 }
 
+.blog-post-feature-image-wrap {  /* Blog post feature image */
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           height: 250px;
+           margin-bottom: 20px;
+           img {
+               display: none;
+           }
+       }
 
 /* ===============================
   SOCIAL ICONS 
